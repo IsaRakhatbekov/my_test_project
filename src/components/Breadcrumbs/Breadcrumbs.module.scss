@@ -1,0 +1,31 @@
+.Breadcrumbs {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 20px;
+
+	.page {
+		font-size: 14px;
+		color: #a8acb3;
+		cursor: pointer;
+
+		&:hover {
+			color: #ffffff;
+		}
+	}
+
+	.pageActive {
+		color: #5f6166;
+		cursor: default;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.separator {
+		color: #5f6166;
+		user-select: none;
+		margin-left: 5px;
+	}
+}

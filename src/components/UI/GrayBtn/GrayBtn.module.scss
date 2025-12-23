@@ -1,0 +1,15 @@
+.btn {
+	border-radius: 8px;
+	padding: 12px;
+	width: 48px;
+	height: 48px;
+	background: #18191a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: #232629;
+	}
+}

@@ -1,0 +1,53 @@
+.paginationWrapper {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.pagination {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.pageItem,
+.arrow,
+.dots {
+	min-width: 48px;
+	width: fit-content;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #18191a;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 0 8px;
+	color: #fafcff;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+
+	&:hover {
+		background: #2a2b2d;
+	}
+
+	&.active {
+		background: #ff4d00;
+		color: #fff;
+	}
+}
+
+.dots {
+	color: #717681;
+	padding: 0 4px;
+}
+
+.info {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 125%;
+	color: rgba(255, 255, 255, 0.5);
+}

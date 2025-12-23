@@ -1,0 +1,36 @@
+.table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 12px;
+	table-layout: fixed;
+}
+
+.table colgroup col {
+	&:nth-child(1) {
+		width: 80px;
+	} // ID
+	&:nth-child(2) {
+		width: 120px;
+	} // Роль
+	&:nth-child(3) {
+		width: 180px;
+	} // Имя
+	&:nth-child(4) {
+		width: 150px;
+	} // Логин
+	&:nth-child(5) {
+		width: 200px;
+	} // Должность
+	&:nth-child(6) {
+		width: 200px;
+	} // Телеграм
+	&:nth-child(7) {
+		width: 200px;
+	} // Почта
+	&:nth-child(8) {
+		width: 180px;
+	} // Телефон
+	&:nth-child(9) {
+		width: 200px;
+	} // Адрес
+}

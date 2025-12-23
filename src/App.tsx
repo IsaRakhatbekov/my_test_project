@@ -1,35 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styles from './App.module.scss'
+import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'
+import Footer from './components/Footer/Footer'
+import Table from './components/Table/Table'
+import Pagination from './components/UI/Pagination/Pagination'
+import UserControls from './components/UserControls/UserControls'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const App = () => {
+	const [currentPage, setCurrentPage] = useState(1)
+	return (
+		<div className={styles.App}>
+			<div className={`${styles.container} container`}>
+				<Breadcrumbs items={['Данные', 'Пользователи']} />
+				<UserControls />
+				<div className={styles.tableWrapper}>
+					<Table />
+				</div>
+				<div className={styles.paginationWrapper}>
+					<Pagination
+						currentPage={currentPage}
+						totalPage={30000}
+						onPageChange={page => setCurrentPage(page)}
+					/>
+				</div>
+				<Footer />
+			</div>
+		</div>
+	)
 }
-
 export default App

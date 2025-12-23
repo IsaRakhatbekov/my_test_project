@@ -1,0 +1,27 @@
+// Tbody.tsx
+tbody {
+	tr {
+		background: #101112;
+		border-radius: 8px;
+		margin-bottom: 10px;
+
+		td {
+			padding: 15px 15px 0 15px;
+			text-align: left;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 1.3em;
+			&:first-child {
+				border-radius: 8px 0 0 8px;
+			}
+			&:last-child {
+				border-radius: 0 8px 8px 0;
+				padding-right: 15px;
+			}
+		}
+	}
+}

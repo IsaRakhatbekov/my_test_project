@@ -1,0 +1,29 @@
+.UserControls {
+	margin: 6px 0 32px 0;
+
+	.title {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: 32px;
+		margin-bottom: 24px;
+	}
+}
+
+.btnsWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.leftSide {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.line {
+	display: inline-block;
+	height: 48px;
+	width: 2px;
+	background-color: #18191a;
+}

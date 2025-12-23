@@ -1,0 +1,26 @@
+.button {
+	background-color: #e65103;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+	color: #fafcff;
+
+	.plus {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

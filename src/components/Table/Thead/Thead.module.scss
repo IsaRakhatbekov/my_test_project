@@ -1,0 +1,53 @@
+.thead {
+	tr {
+		th {
+			padding: 15px;
+			text-align: left;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 1.3em;
+			color: #fafcff;
+		}
+	}
+}
+
+.thContent {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.2s ease, color 0.2s ease;
+
+	& svg {
+		& path {
+			fill: #5f6166;
+		}
+	}
+
+	&.active {
+		& svg {
+			& path {
+				fill: #ee631f;
+			}
+		}
+	}
+	&.rotate {
+		transform: rotate(180deg);
+	}
+}
+.infoIcon {
+	display: flex;
+	align-items: center;
+	margin-left: 4px;
+	opacity: 0.8;
+
+	&:hover {
+		opacity: 1;
+	}
+}
